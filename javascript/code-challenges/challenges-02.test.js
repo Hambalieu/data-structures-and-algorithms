@@ -99,6 +99,7 @@ Read the MDN documentation on String.charCodeAt() if necessary.
 For example: charCode(['h','i']) returns [104, 105].
 ------------------------------------------------------------------------------------------------ */
 
+// eslint-disable-next-line no-unused-vars
 const charCode = (arr) => {
   // Solution code here...
 };
@@ -113,6 +114,7 @@ If any element in the array is not a number, the resulting array should have the
 For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 ------------------------------------------------------------------------------------------------ */
 
+// eslint-disable-next-line no-unused-vars
 const evenOdd = (arr) => {
   // Solution code here...
 };
@@ -159,6 +161,7 @@ const snorlaxAbilities = {
   weight: 4600,
 };
 
+// eslint-disable-next-line no-unused-vars
 const extractAbilities = (arr) => {
   // Solution code here...
 };
@@ -206,6 +209,7 @@ const snorlaxStats = {
   weight: 4600,
 };
 
+// eslint-disable-next-line no-unused-vars
 const extractStats = (arr) => {
   // Solution code here...
 };
