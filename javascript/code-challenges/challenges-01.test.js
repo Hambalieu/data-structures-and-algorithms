@@ -32,7 +32,7 @@ const addExclamation = (arr) => {
   // Solution code here...
   let results = [];
 
-  arr.forEach(strng =>{
+  arr.forEach(strng => {
     let result = strng + '!';
     results.push(result);
 
@@ -82,7 +82,7 @@ const speaker = (words, callback) => {
   // Solution code here...
   let results = [];
 
-  words.forEach( function(value) {
+  words.forEach(function (value) {
     results.push(callback(value));
   });
   return results;
@@ -115,7 +115,9 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  callback(arr,num);
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
+  }
   return arr;
 };
 //addNumbers(6,['dog', 12, true], 2, addValues);
@@ -141,6 +143,13 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+  let results = [];
+  availableItems.forEach(element => {
+    if (element.available){
+      results.push(element.name);
+    }
+  });
+  return results;
 };
 
 /* ------------------------------------------------------------------------------------------------
