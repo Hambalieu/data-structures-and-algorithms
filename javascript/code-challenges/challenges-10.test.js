@@ -7,7 +7,7 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 ------------------------------------------------------------------------------------------------ */
 
-function returnTen(str){
+function returnTen(str) {
   // Solution code here...
   let newArr = str.split('');
   for (let i = 0; i < newArr.length; i++) {
@@ -35,10 +35,10 @@ return: 23
 const findMax = (matrix) => {
   // Solution code here...
   let highestValue = null;
-  for (let i=0; i < matrix.length; i++){
+  for (let i = 0; i < matrix.length; i++) {
     let row = matrix[i];
-    for (let j=0; j < row.length; j++) {
-      if (highestValue === null || row[j] > highestValue){
+    for (let j = 0; j < row.length; j++) {
+      if (highestValue === null || row[j] > highestValue) {
         highestValue = row[j];
       }
     }
@@ -107,9 +107,8 @@ const grandTotal = (stores) => {
     }
   }
   return results;
+
 };
-
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -125,11 +124,11 @@ const salesData = (hours, data) => {
   // Solution code here...
   let results = [];
   data.forEach(element => {
-    results.push({ sales: element + ' cookies'});
+    results.push({ sales: element + ' cookies' });
   });
-  for (let i= 0; i < results.length; i++){
-    results[i].time = hours[i]
-  };
+  for (let i = 0; i < results.length; i++) {
+    results[i].time = hours[i];
+  }
   return results;
 };
 
@@ -156,7 +155,7 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
-  
+  return arr[2].items[1].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -263,20 +262,20 @@ Run your tests from the console: jest challenge-12.test.js
 
 describe('Testing challenge 1', () => {
   test('it should return the last 10 characters of a string as an array', () => {
-    expect(returnTen('hello world')).toStrictEqual(['e','l','l','o',' ','w','o','r','l','d']);
-    expect(returnTen('world')).toStrictEqual(['w','o','r','l','d']);
+    expect(returnTen('hello world')).toStrictEqual(['e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']);
+    expect(returnTen('world')).toStrictEqual(['w', 'o', 'r', 'l', 'd']);
   });
 });
 
 describe('Testing challenge 2', () => {
   test('It should return the max value', () => {
-    expect(findMax([[13,24,24,2], [2,5,6], [2,3]])).toStrictEqual(24);
+    expect(findMax([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(24);
   });
 });
 
 describe('Testing challenge 3', () => {
   test('It should return the total sum', () => {
-    expect(totalSum([[13,24,24,2], [2,5,6], [2,3]])).toStrictEqual(81);
+    expect(totalSum([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(81);
     expect(totalSum([])).toStrictEqual(0);
   });
 });
